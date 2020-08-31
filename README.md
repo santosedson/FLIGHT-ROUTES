@@ -104,7 +104,7 @@ A seguir eu explico com mais detalhes
 		Apesar dessa classe conter a lógica por trás da escolha da rota mais barata, achei que ela se encaixava mais como um utilitário 
 		do que uma regra de negócio, visto que esse algoritmo também pode resolver outros problemas de rotas em outros contextos,
 		por exemplo, achar o caminho mais curto de um ponto X até o ponto Y.
-		Curiosidade:
+		- Curiosidade:
 		Após tentar por duas vezes criar um algoritmo apenas usando os fundamentos da minha lógica, obtendo sucesso em alguns cenários e em outros não,
 		decidi estudar sobre algoritmos de rota. Então abandonei as soluções anteriores e me aprofundei no estudo do algoritmo de Dijkstra 
 		(nome dado em homenagem ao cientista Edsger Dijkstra que desenvolveu um algoritmo em 1956 solucionando o problema do caminho mais curto num grafo).

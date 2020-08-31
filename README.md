@@ -122,10 +122,10 @@ A seguir eu explico com mais detalhes
 		e porque deixa a entrada de dados mais organizada facilitando o processo de deserialização.
 	  
 - service:	
-	  - FileHandler.java:
+	 - FileHandler.java:
 		Defini um classe somente para manipular o arquivo csv. Essa classe irá fazer todo o processo de varredura em diretórios, 
 		selecionar arquivos csv, leitura e edição de arquivo.
-	  - FlightRoutesHandler.java:
+	 - FlightRoutesHandler.java:
 		Essa classe é o core da aplicação. Nela estão todas as regras de negócio que diz respeito a natureza da aplicação,
 		que é traçar a rota de viagem com o menor custo. 
 		No código fonte no inicio de cada método existe uma descrição explicando o que cada função faz.

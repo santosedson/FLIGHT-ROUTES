@@ -1,8 +1,6 @@
 # FLIGHT-ROUTES
 Esse projeto é um desafio que utiliza o algoritmo de Dijkstra para definir rotas com o menor custo
 
-# Rota de Viagem (flight-routes)#
-
 - Versão: 0.0.1
 - Linguagem: Java 8
 - Autor: Edson B. S. Filho

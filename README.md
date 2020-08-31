@@ -7,7 +7,7 @@ Esse projeto é um desafio que utiliza o algoritmo de Dijkstra para definir rota
 - Data: 31.08.2020 
 - Local: São Paulo -SP
 
-## Como executar essa aplicação ## 
+## Como executar essa aplicação: ## 
 
  1. Se for rodar a aplicação no Windows, execute o bat `INICIAR-FLIGHT-ROUTES.bat` que se encontra na raiz do projeto.
 	Se o arquivo bat não funcionar corretamente, na pasta do projeto execute o seguinte comando :
@@ -27,23 +27,23 @@ Esse projeto é um desafio que utiliza o algoritmo de Dijkstra para definir rota
 		
 	- **Rest Api:** 
 		Por default a interface rest usará a porta 8081. Caso precise mudar a porta, alterar no arquivo `application.properties` localizado em `src\main\resources`
-		
-		**Edpoint de consultas:**  http://localhost:8081/api/v1/route/find?route=<FROM-TO>
-		**Verbo Http:** GET
-		**Response code de sucesso:** 202
-		**Response body:** Conteúdo HTML
-		**Descrição de utilização:** Para acessar esse endpoint, poderá utilizar o navegador do seu computador ou a aplicação Postman.
+		- Edpoint de consultas:  http://localhost:8081/api/v1/route/find?route=FROM-TO
+		- Verbo Http: GET
+		- Response code de sucesso: 202
+		- Response body: Conteúdo HTML
+		- Descrição de utilização: Para acessar esse endpoint, poderá utilizar o navegador do seu computador ou a aplicação Postman.
 		Exemplo de formato esperado no parâmetro: 
 					```
 					REC-SSA
 					```
-		**Edpoint para adicionar novas rotas:**  http://localhost:8081/api/v1/route/input
-		**Verbo Http:** POST
-		**Response code de sucesso:** 202
-		**Response body:** Conteúdo HTML
-		**Descrição de utilização:** Como esse endpoint espera receber um json como conteúdo, para testá-lo poderá ser utilizado o Postman.
+		
+		- Edpoint para adicionar novas rotas:  http://localhost:8081/api/v1/route/input
+		- Verbo Http: POST
+		- Response code de sucesso: 202
+		- Response body: Conteúdo HTML
+		- Descrição de utilização: Como esse endpoint espera receber um json como conteúdo, para testá-lo poderá ser utilizado o Postman.
 		Esse endpoint espera receber um json no seguinte formato:
-					```
+					**```
 					{
 						"fileName": "input-routes",
 						"route": [
@@ -54,15 +54,15 @@ Esse projeto é um desafio que utiliza o algoritmo de Dijkstra para definir rota
 							}
 						]
 					}
-					```
-		No campo `fileName` digite o nome do arquivo csv que deseja inserir as novas rotas(não deve ser informado a extensão do arquivo)
+					```**
+		- No campo `fileName` digite o nome do arquivo csv que deseja inserir as novas rotas(não deve ser informado a extensão do arquivo)
 		Dentro da estrutura route, com capacidade para receber uma lista de rotas, no campo `from` digite o aeroporto de origem,
 		no campo `to`, digite o aeroporto de destino, no campo `cost`, digite o valor desejado 
 		No campo `cost`, se o valor for um número com pontuação flutuante, utilizar o caractere `.` ex: 100.90)
 
 3. Para finalizar a aplicação, basta apenas fechar o terminal.
 
-## Estrutura dos arquivos/pacotes ## 
+## Estrutura dos arquivos/pacotes: ## 
 
 - **Estrutura de pacotes:**
 	- com.edson.filho.flight.routes : Estrutura base  que contém os demais subpacotes e classe Main da aplicação.
@@ -80,7 +80,7 @@ Esse projeto é um desafio que utiliza o algoritmo de Dijkstra para definir rota
 
 
 	
-## Explicando as decisões de design adotadas para a solução ## 
+## Explicando as decisões de design adotadas para a solução: ## 
 Construí a aplicação procurando separar as funcionalidades em camadas bem definidas e desacopladas, de uma 
 forma que permitisse a reutilização de funcionalidades por ambas as interfaces (Console e Rest Api).
 A seguir eu explico com mais detalhes
